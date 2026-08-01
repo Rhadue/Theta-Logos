@@ -4,6 +4,62 @@ All notable changes to θ-Logos will be documented in this file.
 
 ---
 
+## [Unreleased]
+
+Findings from round-trip testing. Nothing in the specification changed; these are
+records of what was measured.
+
+### Validated
+
+- **`θ` carries emergent-property semantics**, confirmed by ablation rather than
+  assertion. A model was given an expression and asked to render it in English,
+  with no access to this specification, in a fresh session each time.
+
+  | Input | Rendering of the final term |
+  | --- | --- |
+  | `[∃: Clay ∈: Kiln → Ceramic ⊕ θ_hardness]` | "with an added **property** of hardness" (twice, identical) |
+  | `[∃: Clay ∈: Kiln → Ceramic ⊕ Hardness]` | "accompanied by an **increase in** hardness" |
+  | `[∃: Clay ∈: Kiln → Ceramic ⊕ Hardness]` | "results in ceramic **and** hardness" |
+
+  Removing the symbol shifts hardness from a *quality of the product* to either a
+  *measurable quantity* or a *co-product listed alongside it* — three distinct
+  ontological roles. Both ablated runs moved away from "property", in different
+  directions, while the two runs carrying `θ` were word-for-word identical.
+
+- **The notation is largely readable without the specification.** In the same
+  conditions, eight of nine constructs decoded correctly on first contact:
+  `∃` → "there exists", `∈` → "entering", `→` → transformation, `⟨x⟩` →
+  mediation, `⟲` → "within a cyclic process", `⊕` → "combined with", `≡` →
+  "equivalent to", and block boundaries as sentence boundaries.
+
+### Known issues
+
+- **`θ` loses to the trigonometric θ when context does not block it.** Given
+  `⊕ θ_grief`, a model rendered it as "combined with **the angle** of grief" — the
+  label did not prevent the fallback, `_grief` being read as a subscript on an
+  angular quantity. The symbol's function is sound; the glyph competes with an
+  entrenched meaning. A mark without a mathematical history would keep the
+  function and drop the collision, at the cost of the project's name.
+
+- The symbols that decode reliably are those the notation borrows at their
+  established meaning. `θ` is the only one reassigned against an existing
+  convention, and the only one that failed. That may generalise to future
+  extensions.
+
+### Caveats
+
+Two runs per condition, one model, its smallest tier. The distinction being read
+— "property" against "increase in" against "and" — is a semantic nuance, not a
+measurement, and a sceptic could call it paraphrase variation. Treat this as a
+direction worth testing properly, not as a result.
+
+Anyone repeating it should note that context contaminates the test badly. An
+earlier attempt ran the control in the same conversation as the first trial, and
+the model transposed its own previous answer into the new nouns, reproducing five
+features that were absent from the input. Every trial needs an empty session.
+
+---
+
 ## [1.2] - 2026-08-01
 
 ### Fixed
