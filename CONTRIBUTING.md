@@ -103,7 +103,7 @@ Custom symbols:
 
 **Explanation**: [What the example shows]
 
-**Replaces**: [What verbose pattern this compresses]
+**Replaces**: [What verbose pattern this stands in for]
 ```
 
 ---

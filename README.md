@@ -19,15 +19,19 @@ A minimal, flexible notation system for expressing complex concepts across any d
 
 ## Quick Example
 
-**Natural language** (verbose):
+**Natural language**:
 > "In cellular metabolism, glucose is converted into pyruvate through glycolysis, producing energy in the form of ATP with metabolic emergence."
 
-**θ-Logos** (6 tokens):
+**θ-Logos**:
 ```
 [∃: Glucose ∈: Cell → Pyruvate ⊕ ATP ⊕ θ_metabolism]
 ```
 
-**Result**: ~70% token reduction while preserving semantic completeness.
+The point is not brevity — the two are about the same length once tokenised. It is
+that the notation forces each part to be named separately and in the same place
+every time: what exists, the context it exists in, what it becomes, what is
+produced alongside, and what emerges. Prose can leave any of those implicit, and
+usually does. θ-Logos cannot.
 
 ---
 
@@ -59,9 +63,9 @@ See [Core Specification](theta_logos_core.md) for complete syntax.
 ## Proven Applications
 
 **Biochemistry**:
-- Krebs cycle: 85 tokens vs ~200 in natural language
-- Protein folding: 47 tokens, complete dynamics
-- Translation: Full central dogma + poetic expression
+- Krebs cycle: full cycle including regulation points
+- Protein folding: complete dynamics, chaperone mediation
+- Translation: full central dogma + poetic expression
 
 **Abstract Concepts**:
 - Consciousness, purpose, knowledge representation

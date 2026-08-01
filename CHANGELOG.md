@@ -65,6 +65,27 @@ All notable changes to θ-Logos will be documented in this file.
   operator. It is now documented as punctuation marking "this operator applies to
   what follows", with the note that `→` and `⊕` are infix and never take it.
 
+### Removed
+
+- **The token compression claim.** The README stated that the glycolysis example
+  was "6 tokens" and represented "~70% token reduction". Measured against that
+  exact example, it is 25 tokens, and the saving is 4% under the GPT-4o/5
+  tokeniser and 11% under GPT-4's — not 70%. The figure appears to have counted
+  semantic units rather than tokens.
+
+  The underlying reason the saving is small: `∃`, `∈`, `⊂`, `⊕` and `≡` cost two
+  tokens each and are split mid-UTF-8, so a model receives byte fragments rather
+  than symbols. Only `→`, `θ` and `¬` tokenise as one clean unit.
+
+  The example itself is kept, since it does illustrate the notation well. What it
+  demonstrates is now stated accurately: the notation forces context,
+  transformation, by-products and emergence to be named separately and in the same
+  position every time, where prose can leave any of them implicit. That claim holds
+  regardless of token count, and does not invite a reader to check an easily
+  falsified number.
+
+- Per-example token counts under **Proven Applications**, for the same reason.
+
 ### Changed
 
 - **The core is 9 primitives, not 14.** The previous count included the six
