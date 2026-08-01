@@ -184,7 +184,25 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
 ## License
 
-CC-BY-SA 4.0 - Free to use, modify, and share with attribution.
+Copyright © 2025 Radu Ioan Mânea.
+
+θ-Logos is licensed under the [Creative Commons Attribution-ShareAlike 4.0
+International License](https://creativecommons.org/licenses/by-sa/4.0/)
+(CC BY-SA 4.0). You may use, adapt and redistribute it, including commercially,
+provided you give attribution and license your adaptations under the same terms.
+The full legal text is in [LICENSE](LICENSE).
+
+To attribute:
+
+```
+θ-Logos: Universal Semantic Notation, by Radu Ioan Mânea,
+licensed under CC BY-SA 4.0.
+https://github.com/Rhadue/Theta-Logos
+```
+
+The notice lives here rather than inside `LICENSE`, per Creative Commons' own
+guidance that the legal code stays unmodified and the copyright notice is applied
+to the work.
 
 ---
 

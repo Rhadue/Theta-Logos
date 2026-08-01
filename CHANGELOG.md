@@ -40,8 +40,11 @@ All notable changes to θ-Logos will be documented in this file.
   condition cannot be met if there is no one to attribute. A header now names the
   holder and gives the exact attribution string to use.
 
-  This should also let GitHub identify the licence as CC BY-SA 4.0 rather than
-  reporting "Other", since detection compares against the full canonical text.
+  `LICENSE` holds the canonical text and nothing else; the copyright notice and
+  attribution string live in the README instead. That is Creative Commons' own
+  guidance — the legal code stays unmodified and the notice is applied to the
+  work — and it is also what lets GitHub recognise the licence, since detection
+  compares the file against the canonical text from the first byte.
 
 ### Added
 
