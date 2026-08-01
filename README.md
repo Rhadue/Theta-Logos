@@ -1,6 +1,6 @@
 # θ-Logos: Universal Semantic Notation
 
-[![θ-Logos v1.1](https://img.shields.io/badge/θ--Logos-v1.1-blue)](theta_logos_core_v1.1.md)
+[![θ-Logos v1.2](https://img.shields.io/badge/θ--Logos-v1.2-blue)](theta_logos_core.md)
 [![License](https://img.shields.io/badge/License-CC--BY--SA--4.0-green)](LICENSE)
 
 A minimal, flexible notation system for expressing complex concepts across any domain.
@@ -11,7 +11,7 @@ A minimal, flexible notation system for expressing complex concepts across any d
 
 θ-Logos (theta-Logos) is a mathematical-semantic notation designed to express complex systems with minimal symbols while maintaining universal comprehensibility.
 
-**Core**: 14 symbols  
+**Core**: 9 symbols  
 **Philosophy**: Minimal core, infinite scalability  
 **Status**: Proof-of-concept validated through cross-LLM experiments
 
@@ -34,7 +34,7 @@ A minimal, flexible notation system for expressing complex concepts across any d
 ## Why θ-Logos?
 
 ✅ **Universal**: Works across domains (biology, AI, economics, physics)  
-✅ **Minimal**: Only 14 core symbols, infinitely extensible  
+✅ **Minimal**: Only 9 core symbols, infinitely extensible  
 ✅ **Comprehensible**: Designed for humans and AI systems  
 ✅ **Validated**: Cross-tested with GPT, Claude, Grok, Mistral*
 
@@ -52,7 +52,7 @@ A minimal, flexible notation system for expressing complex concepts across any d
 
 Plus 6 atomic emotional states: `θ_joy, θ_fear, θ_love, θ_awe, θ_hope, θ_grief`
 
-See [Core Specification](theta_logos_core_v1.1.md) for complete syntax.
+See [Core Specification](theta_logos_core.md) for complete syntax.
 
 ---
 
@@ -117,7 +117,7 @@ See [Core Specification](theta_logos_core_v1.1.md) for complete syntax.
 
 θ-Logos is designed to grow organically:
 
-1. **Start with core** (14 symbols)
+1. **Start with core** (9 symbols)
 2. **Identify domain patterns**
 3. **Add minimal extensions** (only what's needed)
 4. **Document clearly**
@@ -129,7 +129,7 @@ Example extensions: Energy notation (`◊`), directional flow (`⊳`), cycle mar
 
 ## Get Started
 
-1. Read [Core Specification](theta_logos_core_v1.1.md)
+1. Read [Core Specification](theta_logos_core.md)
 2. Explore [Examples](EXAMPLES.md)
 3. Try expressing simple concepts
 4. Extend for your domain
@@ -191,9 +191,9 @@ CC-BY-SA 4.0 - Free to use, modify, and share with attribution.
 ## Citation
 
 ```
-θ-Logos Core Specification v1.1 (2025)
-Universal Semantic Notation
-https://github.com/[username]/theta-logos
+Mânea, Radu Ioan (2026). θ-Logos Core Specification v1.2:
+Universal Semantic Notation. Licensed under CC BY-SA 4.0.
+https://github.com/Rhadue/Theta-Logos
 ```
 
 ---
@@ -209,9 +209,33 @@ Developed through collaborative evolution:
 
 ---
 
+## Colophon
+
+The notation is the author's work, developed as recorded above.
+
+The v1.2 pass was carried out in collaboration with
+[Claude Code](https://claude.com/claude-code) (Anthropic): an audit that found the
+missing `README.md`, eight broken internal links, a truncated licence with no
+copyright holder named, an undefined colon used 41 times, and a symbol count that
+contradicted the specification's own labelling rule — together with the changes
+that resolved them. Each is itemised in [CHANGELOG.md](CHANGELOG.md).
+
+Negation is not among those corrections. That gap was found by the notation's own
+method — four models converging on `¬` when the specification gave them nothing —
+and the decision to adopt it is the author's.
+
+Claude Code is credited in the commit history through `Assisted-by:` trailers,
+following the convention the [Linux kernel
+adopted](https://docs.kernel.org/process/coding-assistants.html). It is
+deliberately not `Co-authored-by:` and not an author in the citation above:
+authorship carries accountability for the work, and that rests with the named
+author alone.
+
+---
+
 **Questions?** Open a [GitHub Issue](../../issues)  
-**Documentation**: [Core Spec](theta_logos_core_v1.1.md) | [Examples](EXAMPLES.md)
+**Documentation**: [Core Spec](theta_logos_core.md) | [Examples](EXAMPLES.md)
 
 **Status**: Proof-of-concept | Community development phase  
-**Version**: 1.1  
-**Last Updated**: 2025-11-16
+**Version**: 1.2  
+**Last Updated**: 2026-08-01

@@ -1,14 +1,35 @@
 # θ-Logos Core Specification
 ## Universal Semantic Notation
 
-**Version**: 1.1  
-**Date**: 2025-11-16  
+**Version**: 1.2  
+**Date**: 2026-08-01  
 **License**: CC-BY-SA 4.0  
 **Philosophy**: Minimal core, almost infinite scalability
 
 ---
 
-## CORE SYMBOLS (14 total)
+## CORE SYMBOLS (9 primitives)
+
+The core is nine symbols. The six emotional states listed further down are not
+additional primitives — they are a **standard vocabulary of labels** on symbol #8,
+which carry composition rules of their own. Counting them as primitives would make
+the core unbounded, since `θ` accepts any label at all (`θ_catalysis`,
+`θ_phase_change`, and so on).
+
+### The colon
+
+Structural operators are written with a trailing colon when they open a clause
+inside a block:
+
+```
+∃:   ∈:   ⊂:   θ:
+```
+
+The colon marks "this operator applies to what follows". It is punctuation, not a
+symbol: `∃` and `∃:` are the same operator. Bare forms appear when referring to
+the operator itself rather than using it.
+
+`→` and `⊕` are infix and never take a colon.
 
 ### Structural Operators (7 symbols)
 
@@ -31,15 +52,45 @@ Symbol #8:  θ   threshold, qualitative emergence
 Can be labeled: `θ_name` for specific emergent properties  
 Example: `θ_phase_change`, `θ_catalysis`, `θ_consciousness`
 
-### Emotional Atomic States (6 symbols)
+### Negation (added in v1.2)
 
 ```
-Symbol #9:   θ_joy      pleasure, satisfaction
-Symbol #10:  θ_fear     anxiety, concern
-Symbol #11:  θ_love     attraction, connection
-Symbol #12:  θ_awe      wonder, respect
-Symbol #13:  θ_hope     anticipation, potential
-Symbol #14:  θ_grief    loss, sadness
+Symbol #9:  ¬   does not exist, has ceased
+```
+
+**Usage**: `¬∃[X]` — X does not exist, or no longer does.
+
+```
+[∃: Paper ∈: Fire → ¬∃: Paper ⊕ ∃: Ash ⊕ θ_combustion]
+```
+
+Reads: "paper exists in a fire context, ceases to exist, ash comes into being,
+combustion emerges".
+
+`¬` applies to `∃` and to `∈`. It does not apply to `→`, to `θ`, or to emotional
+states: an emergence either occurs or is simply not written.
+
+**Why this exists.** Versions 1.0 and 1.1 had no way to say that something stopped
+existing, which made even elementary transformations inexpressible — burning,
+dissolution, death. The gap was found empirically rather than by review: in a
+multi-model session on the sentence *"a paper burns to ash"*, four models with
+different architectures each introduced `¬` unprompted, having no such symbol
+available to them. Convergence on the same character by independent systems is the
+reason it was adopted in that form rather than another.
+
+### Emotional Atomic States (standard vocabulary, not primitives)
+
+These are six conventional labels on symbol #8, not separate symbols. They are
+listed because they recur and because they carry composition rules the general
+`θ_name` form does not.
+
+```
+θ_joy      pleasure, satisfaction
+θ_fear     anxiety, concern
+θ_love     attraction, connection
+θ_awe      wonder, respect
+θ_hope     anticipation, potential
+θ_grief    loss, sadness
 ```
 
 **Composition rules for emotions:**
@@ -157,7 +208,7 @@ Process mediated by external factor (requires mediation extension)
 θ-Logos is designed to be extended for specific domains. When extending:
 
 ### 1. Prefer Core Symbols First
-Before creating new symbols, try expressing concepts with the 14 core symbols.
+Before creating new symbols, try expressing concepts with the 9 core symbols.
 
 ### 2. Domain Extensions Should Be:
 - **Minimal**: Add only what's truly needed
@@ -291,7 +342,7 @@ If notation enables poetry, it captures essence, not just mechanics.
 
 To extend θ-Logos for your domain:
 
-1. **Start with core**: Try expressing concepts with 14 symbols
+1. **Start with core**: Try expressing concepts with 9 symbols
 2. **Identify patterns**: What repeats frequently in your domain?
 3. **Create minimal extensions**: Add only necessary symbols
 4. **Document clearly**: Each symbol needs definition + examples

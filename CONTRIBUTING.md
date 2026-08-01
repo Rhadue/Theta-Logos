@@ -17,7 +17,7 @@ Thank you for your interest in contributing to θ-Logos!
 
 ## Before Contributing
 
-1. **Read the [Core Specification](theta_logos_core_v1.1.md)**
+1. **Read the [Core Specification](theta_logos_core.md)**
 2. **Review [Examples](EXAMPLES.md)**
 3. **Search existing issues** to avoid duplicates
 4. **Start small** - simple examples or documentation fixes first
@@ -29,12 +29,12 @@ Thank you for your interest in contributing to θ-Logos!
 When applying θ-Logos to a new domain:
 
 ### 1. Start with Core Symbols
-Try expressing your domain concepts with the 14 core symbols before adding extensions.
+Try expressing your domain concepts with the 9 core symbols before adding extensions.
 
 ### 2. Document Your Process
 Show:
 - **Domain context**: What field? What problem?
-- **Core attempt**: How far can you get with 14 symbols?
+- **Core attempt**: How far can you get with 9 symbols?
 - **Extensions needed**: What patterns repeat?
 - **Validation**: Did someone else understand it?
 
